@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Estilos de barra de navegacion */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+
+  
+  
+}
+.barra-navegacion {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 75px;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0;
+  z-index: 1000; 
+}
+
+.barra-navegacion::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  height: 2px; 
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.barra-navegacion .logo {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.barra-navegacion .enlaces-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+.barra-navegacion .botones {
+  display: flex;
+  width: auto;
+  height: 35px;
+  align-items: center;
+}
+.barra-navegacion .botones .boton {
+  padding: 10px 20px;
+  border: 1px solid #20B3FF;
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.barra-navegacion .botones .boton-iniciar-sesion  {
+  background-color: transparent;
+  color: #fff;
+}
+.barra-navegacion .botones .boton-crear-cuenta {
+  background-color: #20B3FF;
+  color: #fff;
+}
+
+/* Estilos de Informacion Principal */
+h1 {
+  font-size: 48px;
+}
+
+.descubre-financesync h2{
+  margin-top: 160px;
+}
+
+.seccion-funciones h2{
+  margin-top: 177px;
+}
+
+.seccion-informacion-inicial {
+  padding: 150px;
+  margin-top: 120px;
+  gap: 130px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.informacion-inicial {
+  color: white;
+  width: 415px;
+  height: 342px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informacion-inicial p {
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.boton-explorar {
+  padding: 10px 20px;
+  border: 1px solid #20B3FF;
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Acerca de FinanceSync */
+.acerca-de-financesync {
+  color: white;
+  text-align: center; 
+  padding: 50px;
+  display: flex;
+  justify-content: center; 
+}
+
+.contenedor-info-acerca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 854px;
+  height: 231px;
+}
+
+.contenedor-info-acerca h2 {
+  margin-bottom: 70px;
+}
+.contenedor-info-acerca p{
+  margin-top: auto;
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Seccion de Planes */
+h2 {
+  font-size: 45px;
+  margin-bottom: 116px;
+}
+.seccion-planes {
+  color: white;
+  padding: 50px;
+}
+
+.seccion-planes h2 {
+  color: white;
+margin-top: 200px;
+}
+
+.precio-gratuito{
+  color: #20B3FF;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.precio-premium{
+  color: #20B3FF;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.contenedor-planes {
+  width: 100%;
+  max-width: 401px;
+  min-height: 600px;
+  border: 2px solid #20B3FF;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5),
+              0 0 30px rgba(0, 255, 255, 0.3),
+              0 0 60px rgba(0, 255, 255, 0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+  margin: 1rem ;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.tipo-de-plan {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.precio-premium {
+  color: #20B3FF;
+  font-weight: bold;
+  font-size: clamp(20px, 3vw, 24px);
+  margin: 1rem 0;
+}
+
+.beneficios {
+  font-size: 20px;
+  line-height: 1.6; /* Mejorar el espaciado entre líneas */
+}
+
+.beneficios li {
+  padding-top: 10px; /* Reducir el espacio entre elementos de la lista */
+}
+
+.boton-adquirir {
+  padding: 12px 24px;
+  border: 1px solid #20B3FF;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  font-size: clamp(14px, 20vw, 16px);
+  margin-top: auto;
+}
+
+.boton-adquirir-gratuito{
+  padding: 10px 20px;
+  border: 1px solid #20B3FF;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  margin-top: 90px; /* Empuja el botón hacia abajo */
+  align-self: center; /* Centra el botón horizontalmente */
+}
+
+.todos-los-planes {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+}
+
+.separador {
+  width: 100%; 
+  height: 2px;
+  background-color: #ffffff; 
+  margin: 5px 0;
+}
+
+/* Descubre FinanceSync */
+
+.descubre-financesync {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.contenedor-de-informacion {
+  border: 2px solid #20B3FF;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), /* Luz externa suave */
+  0 0 30px rgba(0, 255, 255, 0.3), /* Luz externa media */
+  0 0 60px rgba(0, 255, 255, 0.1); /* Luz externa difusa */
+  border-radius: 10px;
+  background-color: transparent;
+  margin-top: 53px;
+  width: 1112px;
+  height: 313px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10%; 
+  box-sizing: border-box;
+
+  gap: 127px;
+}
+
+.titulo-de-informacion {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Funciones */
+
+.seccion-funciones {
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.tarjeta-de-funcion {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.contenedor-funcion {
+  border: 2px solid #20B3FF;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), /* Luz externa suave */
+  0 0 30px rgba(0, 255, 255, 0.3), /* Luz externa media */
+  0 0 60px rgba(0, 255, 255, 0.1); /* Luz externa difusa */
+  border-radius: 10px;
+  background-color: transparent;
+  width: 308px;
+  height: 437px;
+
+  display: flex; 
+  flex-direction: column; /* Organiza los elementos en una columna */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Opcional: centra el texto dentro */
+
+  padding: 0 20px;
+  box-sizing: border-box;
+
+}
+
+.titulo-funcion {
+  font-size: 24px;
+  font-weight: bold;
+
+  padding-bottom: 30px;
+}
+
+.contenedor-funcion img {
+  padding-bottom: 35px;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  color: white;
+  background-color: #000000c4 ;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 35px;
+  margin-top: 200px;
+  border-top: white solid;
+}
+
+
+
+.logos-de-redes img {
+  margin: 0 10px; 
+
+  margin-bottom: 20px;
+}
+
+.titulo-redes{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; 
+  display: flex; 
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 10px; 
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none; 
+}
+
+
+.contenedor-footer-izquierda {
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-footer-izquierda img {
+  padding: 50px;
+}
+
+.contenedor-footer-derecha {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}

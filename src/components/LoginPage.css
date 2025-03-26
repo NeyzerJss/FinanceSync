@@ -1,0 +1,91 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000; /* Fondo negro */
+  font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+  background: #1c1c1c; /* Fondo gris oscuro para el contenedor */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff; /* Texto blanco */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444; /* Borde gris oscuro */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #333; /* Fondo gris oscuro */
+  color: #fff; /* Texto blanco */
+}
+
+.login-input::placeholder {
+  color: #aaa; /* Color del texto del placeholder */
+}
+
+.login-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.divider {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #aaa; /* Texto gris claro */
+}
+
+.google-button {
+  padding: 10px;
+  background-color: #db4437;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google-button:hover {
+  background-color: #c23321;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.register-link span:hover {
+  text-decoration: underline;
+}
